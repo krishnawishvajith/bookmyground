@@ -4,5 +4,6 @@
     <?php foreach($data['users'] as $user): ?>
         <p><?php echo $user->name; ?> - <?php echo $user->age; ?></p>
     <?php endforeach; ?>
+    <?php ?>
 <?php require APPROOT.'/views/inc/components/footer.php'; ?>
 
