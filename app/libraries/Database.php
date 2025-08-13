@@ -10,7 +10,7 @@ class Database{
     private $statement;
     private $error;
 
-    public function __constructor()
+    public function __construct()
     {
         $dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->dbname;
 
@@ -65,7 +65,7 @@ class Database{
 
     //Get single record as the single result
     public function single(){
-        $this->execute()();
+        $this->execute();
         return $this->statement->fetch(PDO::FETCH_OBJ);
     }
 
